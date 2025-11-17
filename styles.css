@@ -1,0 +1,119 @@
+ *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+    }
+
+    body{
+        background: #f5f6fa;
+        padding: 20px;
+    }
+
+    .container{
+        max-width: 900px;
+        margin: auto;
+    }
+
+    h1{
+        text-align: center;
+        margin-bottom: 20px;
+        color: #2d3436;
+    }
+
+    .search-box{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .search-box input{
+        width: 100%;
+        padding: 12px 15px;
+        font-size: 16px;
+        border-radius: 8px;
+        border: 2px solid #dfe6e9;
+        outline: none;
+    }
+    .search-box input:focus{
+        border-color: #0984e3;
+    }
+
+    .add-note{
+        background: #fff;
+        padding: 15px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    }
+    .add-note input, .add-note textarea{
+        width: 100%;
+        padding: 10px;
+        border: 2px solid #dcdde1;
+        border-radius: 8px;
+        margin-bottom: 10px;
+        outline: none;
+    }
+    .add-note textarea{
+        height: 90px;
+        resize: none;
+    }
+    .add-note button{
+        padding: 10px 20px;
+        border: none;
+        background: #0984e3;
+        color: #fff;
+        font-size: 16px;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+    .add-note button:hover{
+        background: #0652dd;
+    }
+
+    .notes{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+    }
+
+    .note-card{
+        background: #fff;
+        padding: 15px;
+        border-radius: 12px;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        position: relative;
+    }
+
+    .note-card h3{
+        margin-bottom: 8px;
+        color: #2d3436;
+    }
+    .note-card p{
+        color: #636e72;
+        font-size: 14px;
+        min-height: 50px;
+    }
+
+    .btns{
+        margin-top: 15px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .btns button{
+        padding: 7px 15px;
+        font-size: 14px;
+        border: none;
+        border-radius: 7px;
+        cursor: pointer;
+    }
+
+    .edit-btn{
+        background: #00b894;
+        color: #fff;
+    }
+
+    .delete-btn{
+        background: #d63031;
+        color: #fff;
+    }
